@@ -50,7 +50,6 @@ export default class EmojiReactionStore extends Service {
 
   set storedFavorites(value) {
     this.store.setObject({ key: this.USER_EMOJIS_STORE_KEY, value });
-    this.notifyPropertyChange("favorites");
   }
 
   get favorites() {
@@ -62,7 +61,7 @@ export default class EmojiReactionStore extends Service {
   }
 
   set favorites(value = []) {
-    this.store.setObject({ key: this.USER_EMOJIS_STORE_KEY, value });
+    this.storedFavorites = value;
   }
 
   track(code) {

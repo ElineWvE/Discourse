@@ -134,6 +134,11 @@ export default class EmojiPicker extends Component {
   }
 
   @action
+  clearFavorites() {
+    this.emojiReactionStore.favorites = [];
+  }
+
+  @action
   trapKeyDownEvents(event) {
     if (event.key === "ArrowUp") {
       event.stopPropagation();
@@ -390,6 +395,8 @@ export default class EmojiPicker extends Component {
       if (tonable && diversity > 1) {
         emoji = `${emoji}:t${diversity}`;
       }
+
+      this.emojiReactionStore.track(`:${emoji}:`);
 
       this.args.didSelectEmoji?.(emoji);
 
@@ -664,12 +671,21 @@ export default class EmojiPicker extends Component {
                   translatedFallback=section
                 }}
               >
-                <h2 class="emoji-picker__section-title">
-                  {{i18n
-                    (concat "chat.emoji_picker." section)
-                    translatedFallback=section
-                  }}
-                </h2>
+                <div class="emoji-picker__section-title-container">
+                  <h2 class="emoji-picker__section-title">
+                    {{i18n
+                      (concat "chat.emoji_picker." section)
+                      translatedFallback=section
+                    }}
+                  </h2>
+                  {{#if (eq section "favorites")}}
+                    <DButton
+                      @icon="trash-alt"
+                      class="btn-transparent"
+                      @action={{this.clearFavorites}}
+                    />
+                  {{/if}}
+                </div>
                 <div class="emoji-picker__section-emojis">
                   {{! we always want the first emoji for tabbing}}
                   {{#let (get emojis "0") as |emoji|}}

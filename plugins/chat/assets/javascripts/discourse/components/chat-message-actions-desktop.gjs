@@ -58,16 +58,15 @@ export default class ChatMessageActionsDesktop extends Component {
     this.chat.activeMessage = null;
   }
 
+  get messageContainer() {
+    return chatMessageContainer(this.message.id, this.context);
+  }
+
   @action
   setup(element) {
     this.popper?.destroy();
 
     schedule("afterRender", () => {
-      this.messageContainer = chatMessageContainer(
-        this.message.id,
-        this.context
-      );
-
       if (!this.messageContainer) {
         return;
       }

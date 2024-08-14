@@ -401,7 +401,7 @@ export default class ChatMessageInteractor {
 
   @action
   openEmojiPicker(trigger) {
-    const menuOptions = {
+    this.menu.show(trigger, {
       identifier: "emoji-picker",
       groupIdentifier: "emoji-picker",
       component: EmojiPickerVirtual,
@@ -410,9 +410,7 @@ export default class ChatMessageInteractor {
           this.selectReaction(emoji);
         },
       },
-    };
-
-    this.menu.show(trigger, menuOptions);
+    });
   }
 
   @bind

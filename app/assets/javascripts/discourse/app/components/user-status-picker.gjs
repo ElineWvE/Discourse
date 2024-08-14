@@ -17,7 +17,9 @@ export default class UserStatusPicker extends Component {
   }
 
   focusEmojiButton() {
-    document.querySelector(".user-status-picker .btn-emoji")?.focus();
+    document
+      .querySelector(".user-status-picker .emoji-trigger-button")
+      ?.focus();
   }
 
   @action
@@ -27,7 +29,6 @@ export default class UserStatusPicker extends Component {
 
   @action
   emojiSelected(emoji) {
-    console.log("emojiSelected", emoji);
     this.args.status.emoji = emoji;
     this.focusEmojiButton();
   }

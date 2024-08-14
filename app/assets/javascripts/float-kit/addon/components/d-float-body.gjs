@@ -9,6 +9,7 @@ import DFloatPortal from "float-kit/components/d-float-portal";
 import { getScrollParent } from "float-kit/lib/get-scroll-parent";
 import FloatKitApplyFloatingUi from "float-kit/modifiers/apply-floating-ui";
 import FloatKitCloseOnEscape from "float-kit/modifiers/close-on-escape";
+import and from "truth-helpers/helpers/and";
 
 export default class DFloatBody extends Component {
   closeOnScroll = modifierFn(() => {
@@ -54,6 +55,7 @@ export default class DFloatBody extends Component {
       @inline={{@inline}}
       @portalOutletElement={{@instance.portalOutletElement}}
     >
+      {{log @instance}}
       <div
         class={{concatClass
           @mainClass
@@ -68,7 +70,7 @@ export default class DFloatBody extends Component {
         {{FloatKitApplyFloatingUi this.trigger this.options @instance}}
         {{(if @trapTab (modifier TrapTab autofocus=this.options.autofocus))}}
         {{(if
-          this.supportsCloseOnClickOutside
+          (and @instance.expanded this.supportsCloseOnClickOutside)
           (modifier
             closeOnClickOutside @instance.close (hash target=this.content)
           )

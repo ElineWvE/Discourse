@@ -374,7 +374,6 @@ export default class ChatComposer extends Component {
   @action
   onSelectEmoji(emoji) {
     const code = ` :${emoji}:`;
-    this.emojiReactionStore.track(code);
     this.composer.textarea.addText(this.composer.textarea.getSelected(), code);
 
     if (this.site.desktopView) {
@@ -488,7 +487,6 @@ export default class ChatComposer extends Component {
       },
       transformComplete: (v) => {
         if (v.code) {
-          this.emojiReactionStore.track(v.code);
           return `${v.code}:`;
         } else {
           const menuOptions = {

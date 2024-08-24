@@ -1,3 +1,4 @@
+import { action } from "@ember/object";
 import Service, { service } from "@ember/service";
 import {
   alertChannel,
@@ -10,6 +11,7 @@ import { bind } from "discourse-common/utils/decorators";
 export default class ChatNotificationManager extends Service {
   @service presence;
   @service chat;
+  @service chatChannelsManager;
   @service chatStateManager;
   @service currentUser;
   @service appEvents;
@@ -143,11 +145,19 @@ export default class ChatNotificationManager extends Service {
     }
   }
 
+  @action
+  async fetchChannel(channelId) {
+    return await this.chatChannelsManager.find(channelId);
+  }
+
   @bind
-  onMessage(data) {
+  async onMessage(data) {
     if (data.channel_id === this.chat.activeChannel?.id) {
       return;
     }
+
+    const channel = await this.fetchChannel(data.channel_id);
+    data.isDirectMessageChannel = channel.isDirectMessageChannel ?? false;
 
     return onNotification(
       data,

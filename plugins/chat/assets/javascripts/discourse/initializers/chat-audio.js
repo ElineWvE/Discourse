@@ -16,11 +16,26 @@ export default {
 
     withPluginApi("0.12.1", (api) => {
       api.registerDesktopNotificationHandler((data, siteSettings, user) => {
+        const indicatorType = user.user_option.chat_header_indicator_preference;
+        const isMention = data.notification_type === MENTION;
+
         if (user.isInDoNotDisturb()) {
           return;
         }
 
-        if (!user.chat_sound) {
+        if (!user.chat_sound || indicatorType === "never") {
+          return;
+        }
+
+        if (indicatorType === "only_mentions" && !isMention) {
+          return;
+        }
+
+        if (
+          indicatorType === "dm_and_mentions" &&
+          !data.isDirectMessageChannel &&
+          !isMention
+        ) {
           return;
         }
 

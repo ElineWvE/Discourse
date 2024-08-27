@@ -2187,6 +2187,7 @@ sk:
     tos_url: "Ak máte stránku s Podmienkami uloženú na iných stránkach, napište sem plný odkaz na ne."
     privacy_policy_url: "Ak máte stránku s Podmienkami súkromia uloženú na iných stránkach, napište sem plný odkaz na ne."
     log_anonymizer_details: "Či sa majú údaje používateľa po anonymizácii ponechať v protokole."
+    display_eu_visitor_stats: "Zobrazenie počtu globálnych návštevníkov a návštevníkov z EÚ na stránke /o stránke."
     newuser_spam_host_threshold: "Koľkokrát môže nový používateľ uverejniť odkaz na rovnakého hostiteľa v rámci svojich príspevkov `newuser_spam_host_threshold` predtým, ako sa bude považovať za spam."
     allowed_spam_host_domains: "Zoznam domén vylúčených z testovania spamových zdrojov. Novým používateľom nebude nikdy zabránené vytvárať príspevky s odkazmi na tieto domény."
     staff_like_weight: "Akú váhu majú mať lajky personálu (lajky, ktoré sa netýkajú personálu, majú váhu 1.)"

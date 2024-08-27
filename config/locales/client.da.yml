@@ -268,7 +268,6 @@ da:
       post_count: "Indlæg"
       active_user_count: "Aktive brugere"
       contact: "Kontakt os"
-      contact_info: "I tilfælde af en kritisk begivenhed eller vigtige spørgsmål angående denne side, kontakt os venligst på %{contact_info}."
       activities:
         topics:
           one: "%{formatted_number} emne"
@@ -4176,6 +4175,7 @@ da:
           edit: "Rediger"
           delete: "Slet"
           delete_confirm: 'Er du sikker på, at du vil slette "%{name}"?'
+          flags_tab: "Flag"
           form:
             save: "Gem"
             name: "Navn"
@@ -4217,7 +4217,6 @@ da:
         menu:
           backups: "Backups"
           logs: "Logs"
-        none: "Ingen backups tilgængelige"
         read_only:
           enable:
             title: "Aktiver \"read-only\" tilstand"
@@ -4253,12 +4252,11 @@ da:
           download:
             label: "Download"
             title: "Send e-mail med downloadlink"
-            alert: "Et link til download af denne backup er blevet e-mailet til dig."
+            alert: "Et link til download af denne backup er blevet e-mailet til dig"
           destroy:
             title: "Sletter backuppen"
             confirm: "Er du sikker på du vil fjerne denne backup?"
           restore:
-            is_disabled: "Gendan er deaktiveret i forum indstillingerne."
             label: "Genetabler"
             title: "Gendan backuppen"
             confirm: "Er du sikker på du vil genskabe denne backup?"
@@ -4267,7 +4265,6 @@ da:
             title: "Rul databasen tilbage til et tidspunkt hvor tingene virkede"
             confirm: "Er du sikker på at du vil genskabe databasen til den forrige virkende version?"
         location:
-          local: "Lokal lagring"
           s3: "S3"
         backup_storage_error: "Kunne ikke få adgang til backup lagring: %{error_message}"
       export_csv:

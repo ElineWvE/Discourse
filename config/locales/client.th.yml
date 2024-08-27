@@ -240,7 +240,6 @@ th:
       like_count: "ถูกใจ"
       topic_count: "กระทู้"
       post_count: "โพสต์"
-      contact_info: "ในกรณีที่เกิดเหตุฉุกเฉินหรือประเด็นสำคัญที่ส่งผลต่อเว็บไซต์นี้ กรุณาติดต่อเราที่ %{contact_info}"
       activities:
         topics:
           other: "%{formatted_number} กระทู้"
@@ -2703,6 +2702,7 @@ th:
           edit: "แก้ไข"
           delete: "ลบ"
           delete_confirm: 'คุณแน่ใจหรือว่าต้องการลบ "%{name}"'
+          flags_tab: "ธง"
           form:
             save: "บันทึก"
             name: "ชื่อ"

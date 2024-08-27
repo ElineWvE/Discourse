@@ -209,7 +209,6 @@ sq:
       like_count: "Pëlqime"
       topic_count: "Tema"
       post_count: "Postime"
-      contact_info: "Në rast të një problemi madhor ose të një çështjeje urgjente që prek faqen, ju lutemi të kontaktoni %{contact_info}."
       activities:
         topics:
           one: "%{formatted_number} temë"
@@ -2178,6 +2177,7 @@ sq:
           enabled: "Aktivizuar?"
           edit: "Redakto"
           delete: "Fshij"
+          flags_tab: "Sinjalizime"
           form:
             save: "Ruaj"
             name: "Emri"
@@ -2216,7 +2216,7 @@ sq:
         menu:
           backups: "Rezervat"
           logs: "Logs"
-        none: "Nuk ka asnjë kopje."
+        none: "Nuk ka asnjë kopje"
         read_only:
           enable:
             title: "Aktivizo mënyrën vetëm-lexo"
@@ -2249,7 +2249,6 @@ sq:
             title: "Remove the backup"
             confirm: "Are you sure you want to destroy this backup?"
           restore:
-            is_disabled: "Restore is disabled in the site settings."
             label: "Rikthe"
             title: "Restore the backup"
             confirm: "Are you sure you want to restore this backup?"

@@ -285,7 +285,6 @@ sr:
       like_count: "Sviđanja"
       topic_count: "Teme"
       post_count: "Poruka"
-      contact_info: "U trenutku kritičnog problema ili hitnog slučaja koji utiče na sajt, molimo vas kontaktirajte nas na %{contact_info}."
       activities:
         posts:
           one: "%{formatted_number} poruka"
@@ -2038,6 +2037,7 @@ sr:
           enabled: "Omgućeno"
           edit: "Izmeni"
           delete: "Obriši"
+          flags_tab: "Zastave"
           form:
             save: "Sačuvaj"
             name: "Ime foruma"
@@ -2069,7 +2069,7 @@ sr:
         menu:
           backups: "Sigurnosne kopije"
           logs: "Logovi"
-        none: "Nema dostupne kopije."
+        none: "Nema dostupne kopije"
         read_only:
           enable:
             title: "Omogući samo-čitanje modul."
@@ -2098,7 +2098,6 @@ sr:
             title: "Ukloni kopiju"
             confirm: "Jeste li sigurni da želite uništiti ovu sigurnosnu kopiju?"
           restore:
-            is_disabled: "Obnova je onemogućena u podešavanjima stranice."
             label: "Obnovi"
             title: "Obnovi sigurnosnu kopiju"
           rollback:

@@ -154,7 +154,6 @@ be:
       like_count: "перавагі"
       topic_count: "Тэмы"
       post_count: "Паведамленні"
-      contact_info: "У выпадку сур'ёзных праблем з гэтым сайтам, калі ласка, звяжыцеся з намі праз %{contact_info}."
       activities:
         posts:
           one: "%{formatted_number} запіс"
@@ -1654,6 +1653,7 @@ be:
           description: "Апісанне"
           edit: "рэдагаваць"
           delete: "Выдаліць"
+          flags_tab: "сцягі"
           form:
             save: "захаваць"
             name: "імя"
@@ -1681,7 +1681,7 @@ be:
         menu:
           backups: "Бэкапы"
           logs: "Логі"
-        none: "No backup available."
+        none: "No backup available"
         read_only:
           enable:
             title: "Ўключыць рэжым толькі для чытання"
@@ -1710,7 +1710,6 @@ be:
             title: "Remove the backup"
             confirm: "Are you sure you want to destroy this backup?"
           restore:
-            is_disabled: "Restore is disabled in the site settings."
             label: "Restore"
             title: "Restore the backup"
           rollback:

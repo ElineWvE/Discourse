@@ -313,7 +313,6 @@ sl:
       post_count: "Prispevki"
       user_count: "Registracije"
       active_user_count: "Aktivni uporabniki"
-      contact_info: "V primeru kritične napake na strani ali nujne zadeve nam pišite na %{contact_info}."
       activities:
         topics:
           one: "%{formatted_number} tema"
@@ -3961,6 +3960,7 @@ sl:
           enabled: "Vključeno?"
           edit: "Uredi"
           delete: "Izbriši"
+          flags_tab: "Zastave"
           form:
             save: "Shrani"
             name: "Ime"

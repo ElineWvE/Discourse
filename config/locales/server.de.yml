@@ -2038,6 +2038,7 @@ de:
     tos_url: "Die vollständige URL zu deinen extern gehosteten Nutzungsbedingungen, sofern vorhanden."
     privacy_policy_url: "Die vollständige URL zu deiner extern gehosteten Datenschutzerklärung, sofern vorhanden."
     log_anonymizer_details: "Legt fest, ob die Daten eines Benutzers nach Anonymisierung im Log gespeichert werden sollen."
+    display_eu_visitor_stats: "Zeige die Anzahl der globalen und EU-Besucher auf der /about-Seite."
     newuser_spam_host_threshold: "Wie oft ein neuer Benutzer einen Link zum selben Host innerhalb seiner `newuser_spam_host_threshold` Beiträge veröffentlichen kann, bevor dies als Spam angesehen wird."
     allowed_spam_host_domains: "Liste von Domains, die keinem Spam-Host-Test unterzogen werden. Neue Benutzer werden niemals daran gehindert, Beiträge mit Links zu diesen Domains zu erstellen."
     staff_like_weight: "Wie viel Gewicht „Gefällt mir“-Angaben des Teams haben sollen („Gefällt mir“-Angaben von Nicht-Team-Mitgliedern haben ein Gewicht von 1.)"
@@ -2426,7 +2427,7 @@ de:
       invalid_reply_by_email_address: "Wert muss „%{reply_key}“ enthalten und sich von der Benachrichtigungs-E-Mail unterscheiden."
       invalid_alternative_reply_by_email_addresses: "Alle Werte müssen „%{reply_key}“ enthalten und sich von der Benachrichtigungs-E-Mail unterscheiden."
       invalid_domain_hostname: "Darf kein * oder ? enthalten."
-      invalid_allowed_iframes_url: "Iframe-URLs müssen mit http:// oder https:// beginnen und mindestens einen zusätzlichen '/' haben."
+      invalid_allowed_iframes_url: "Iframe-URLs müssen mit http:// oder https:// beginnen und mindestens einen zusätzlichen „/“ haben."
       invalid_csp_script_src: "Der Wert muss entweder „unsafe-eval“ oder „wasm-unsafe-eval“ oder in der Form „<hash algorithm>-<base64 value>“ sein, wobei die unterstützten Hash-Algorithmen sha256, sha384 oder sha512 sind. Achte darauf, dass deine Eingabe in einfache Anführungszeichen eingeschlossen ist."
       pop3_polling_host_is_empty: "Du musst „pop3 polling host“ definieren, um POP3-Abfragen zu aktivieren."
       pop3_polling_username_is_empty: "Du musst „pop3 polling username“ definieren, um POP3-Abfragen zu aktivieren."
@@ -4881,7 +4882,7 @@ de:
             description: "Wie können Mitglieder dieser Community beitreten?"
             choices:
               sign_up:
-                label: "Registrierungen"
+                label: "Registrierung"
               invite_only:
                 label: "Nur auf Einladung"
           must_approve_users:

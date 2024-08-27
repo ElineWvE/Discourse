@@ -120,11 +120,11 @@ end
 #  granted_at      :datetime         not null
 #  granted_by_id   :integer          not null
 #  post_id         :integer
-#  notification_id :integer
 #  seq             :integer          default(0), not null
 #  featured_rank   :integer
 #  created_at      :datetime         not null
 #  is_favorite     :boolean
+#  notification_id :bigint
 #
 # Indexes
 #

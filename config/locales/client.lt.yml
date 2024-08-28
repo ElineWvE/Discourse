@@ -316,7 +316,6 @@ lt:
       like_count: "Patinka"
       topic_count: "Temos"
       post_count: "Įrašai"
-      contact_info: "Atsiradus bet kokiai problemai susijusiai su puslapiu, prašome kontaktuoti %{contact_info}."
       activities:
         topics:
           one: "%{formatted_number} tema"
@@ -3971,6 +3970,7 @@ lt:
           edit: "Redaguoti"
           delete: "Pašalinti"
           delete_confirm: 'Ar tikrai norite ištrinti „%{name}“?'
+          flags_tab: "Pažymėk!"
           form:
             save: "Išsaugoti"
             name: "Vardas"
@@ -4008,7 +4008,7 @@ lt:
         menu:
           backups: "Atsarginės kopijos"
           logs: "Įrašai"
-        none: "Nėra galimų atsarginių kopijų."
+        none: "Nėra galimų atsarginių kopijų"
         read_only:
           enable:
             title: "Įjungti skaitymo (read-only) režimą"
@@ -4039,12 +4039,11 @@ lt:
           download:
             label: "Atsisiųsti"
             title: "Siųsti laišką su atsisiuntimo nuoroda"
-            alert: "Šios atsarginės kopijos atsisiuntimo nuoroda jums buvo išsiųsta el. paštu."
+            alert: "Šios atsarginės kopijos atsisiuntimo nuoroda jums buvo išsiųsta el. paštu"
           destroy:
             title: "Ištrinti atsarginę kopiją"
             confirm: "Ar tikrai norite ištrinti šią atsarginę kopiją?"
           restore:
-            is_disabled: "Atkurimas yra išjungtas svetainės nustatymuose."
             label: "Atkurti"
             title: "Atkurti atsarginę kopiją"
             confirm: "Ar tikrai norite atkurti šią atsarginę kopiją?"
@@ -4053,7 +4052,6 @@ lt:
             title: "Atkurti duomenų bazę iki ankstesnės busenos."
             confirm: "Ar tikrai norite grąžinti duomenų bazę į ankstesnę darbo būseną?"
         location:
-          local: "Vietinė saugykla"
           s3: "S3"
         backup_storage_error: "Nepavyko pasiekti atsarginių kopijų saugyklos: %{error_message}"
       export_csv:

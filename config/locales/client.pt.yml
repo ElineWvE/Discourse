@@ -293,7 +293,6 @@ pt:
       user_count: "Registos"
       active_user_count: "Utilizadores ativos"
       contact: "Contactar-nos"
-      contact_info: "No caso de um problema crítico ou de algum assunto urgente que afecte este sítio, por favor contacte-nos em %{contact_info}."
       activities:
         topics:
           one: "%{formatted_number} tópico"
@@ -3923,6 +3922,7 @@ pt:
           edit: "Editar"
           delete: "Eliminar"
           delete_confirm: 'Tem certeza de que deseja excluir "%{name}"?'
+          flags_tab: "Sinalizações"
           form:
             save: "Guardar"
             name: "Nome"
@@ -3963,7 +3963,7 @@ pt:
         menu:
           backups: "Fazer Cópias de Segurança"
           logs: "Logs"
-        none: "Nenhuma cópia de segurança disponível."
+        none: "Nenhuma cópia de segurança disponível"
         read_only:
           enable:
             title: "Activar modo só de leitura"
@@ -3995,12 +3995,11 @@ pt:
           download:
             label: "Transferir"
             title: "Enviar mensagem com a hiperligação de transferência"
-            alert: "Foi-lhe enviada uma mensagem com uma hiperligação para transferir esta cópia de segurança."
+            alert: "Foi-lhe enviada uma mensagem com uma hiperligação para transferir esta cópia de segurança"
           destroy:
             title: "Remover a cópia de segurança"
             confirm: "Tem a certeza que deseja destruir esta cópia de segurança?"
           restore:
-            is_disabled: "A opção de restauro encontra-se desativada nas configurações do sítio."
             label: "Restaurar"
             title: "Restaurar a cópia de segurança"
             confirm: "Tem a certeza que deseja recuperar esta cópia de segurança?"
@@ -4009,7 +4008,6 @@ pt:
             title: "Reverter a base de dados para um estado anterior operacional"
             confirm: "Tem a certeza que pretende reverter a base de dados para o estado de funcionamento anterior?"
         location:
-          local: "Armazenamento Local"
           s3: "S3"
         backup_storage_error: "Falha ao acessar o armazenamento de backup: %{error_message}"
       export_csv:

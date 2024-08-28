@@ -265,7 +265,6 @@ id:
       user_count: "Pendaftaran"
       active_user_count: "Pengguna Aktif"
       contact: "Hubungi kami"
-      contact_info: "Pada kegiatan dari sebuah isu kritikal atau penting terjadi pada situs ini, silahkan kontak kami di %{contact_info}."
       activities:
         topics:
           other: "%{formatted_number} topik"
@@ -2396,6 +2395,7 @@ id:
           enabled: "Diaktifkan?"
           edit: "Ubah"
           delete: "Hapus"
+          flags_tab: "Flags"
           form:
             save: "Simpan"
             name: "Nama"

@@ -9,7 +9,6 @@ Fabricator(:user, class_name: :user) do
   name "Bruce Wayne"
   username { sequence(:username) { |i| "bruce#{i}" } }
   email { sequence(:email) { |i| "bruce#{i}@wayne.com" } }
-  password "myawesomepassword"
   ip_address { sequence(:ip_address) { |i| "99.232.23.#{i % 254}" } }
   active true
 
@@ -143,6 +142,7 @@ Fabricator(:bot, from: :user) do
     min_id = User.minimum(:id)
     [(min_id || 0) - 1, -10].min
   end
+  password nil
 end
 
 Fabricator(:east_coast_user, from: :user) do

@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
 RSpec.describe User do
-  subject(:user) { Fabricate(:user, last_seen_at: 1.day.ago) }
+  subject(:user) { Fabricate(:user, password: "myawesomepassword", last_seen_at: 1.day.ago) }
 
   fab!(:group)
 
@@ -1940,8 +1940,13 @@ RSpec.describe User do
       password = "poutine"
       old_hash = hash(password, user.salt, old_algorithm)
 
-      user.update!(password_algorithm: old_algorithm, password_hash: old_hash)
+      UserPassword.find_by(user_id: user.id, password_expired_at: nil).update_columns(
+        password_algorithm: old_algorithm,
+        password_salt: user.salt,
+        password_hash: old_hash,
+      )
 
+      user.reload
       expect(user.password_algorithm).to eq(old_algorithm)
       expect(user.password_hash).to eq(old_hash)
 
